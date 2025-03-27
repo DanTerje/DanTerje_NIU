@@ -76,7 +76,7 @@
 <body>
     <div>
         <h1 id="title">Dan Terje Norli</h1>
-        <p class="subtext">Prosjektledelse | Programmering | Teknisk tegning | AI Teknologi</p>
+        <p class="subtext">Prosjektledelse | AI | Programmering </p>
         <div class="button-container" id="buttons">
             <button onclick="location.href='pa-jobb.html'">På jobb</button>
             <button onclick="location.href='cv.html'">CV</button>
