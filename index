@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dan Terje Norli</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap');
+        
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f4f4f4;
+            font-family: 'Playfair Display', serif;
+            color: #111;
+            text-align: center;
+        }
+        h1 {
+            font-size: 4rem;
+            font-weight: 700;
+            border-right: 3px solid black;
+            white-space: nowrap;
+            overflow: hidden;
+            width: 0;
+            animation: typing 3s steps(14, end) forwards, blink 0.5s step-end infinite alternate;
+        }
+        .subtext {
+            font-size: 1.5rem;
+            opacity: 0;
+            animation: fadeInText 2s ease-in forwards 4s;
+        }
+        .button-container {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            margin-top: 20px;
+            opacity: 0;
+            animation: fadeInButtons 2s ease-in forwards 6s;
+        }
+        .button-container button {
+            font-size: 1.5rem;
+            padding: 10px 20px;
+            border: none;
+            background-color: transparent;
+            color: #111;
+            font-family: 'Playfair Display', serif;
+            cursor: pointer;
+            text-decoration: none;
+            transition: color 0.3s ease-in-out;
+        }
+        .button-container button:hover {
+            color: #555;
+        }
+        @keyframes typing {
+            from { width: 0; }
+            to { width: 14ch; }
+        }
+        @keyframes blink {
+            50% { border-color: transparent; }
+        }
+        @keyframes fadeInText {
+            from { opacity: 0; transform: translateY(10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        @keyframes fadeInButtons {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h1 id="title">Dan Terje Norli</h1>
+        <p class="subtext">Prosjektledelse | Programmering | Teknisk tegning | AI Teknologi</p>
+        <div class="button-container" id="buttons">
+            <button onclick="location.href='pa-jobb.html'">På jobb</button>
+            <button onclick="location.href='cv.html'">CV</button>
+            <button onclick="location.href='utenfor-jobb.html'">Utenfor jobb</button>
+        </div>
+    </div>
+</body>
+</html>
